@@ -1,15 +1,13 @@
 __author__ = 'springfield'
+maxpalin=0
 
-threedigit1=range(100,1000)
-threedigit2=range(100,1000)
-flag= False
-
-def is_palin(x):
-    return int(x)
+def turn_arrow(x):
+    return int(str(x)[::-1])
 
 
-for x1 in threedigit1:
-    for x2 in threedigit:
+for x1 in range(100,1000):
+    for x2 in range(100,1000):
         x3=x1*x2
-        xc=str(x3)
-        if x3[len(x3)/2:] == x3[len(x3):]+x3[:]
+        if turn_arrow(x3)==x3 and x3>maxpalin:
+            maxpalin= x3
+print maxpalin
