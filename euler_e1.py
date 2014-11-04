@@ -1,11 +1,7 @@
-__author__ = 'enzo'
-
-natural=range(1,1000)
-sum_n=0
-print natural
-for nat in natural:
-    if nat%3==0:
-        sum_n=sum_n+nat
-    elif nat%5==0:
-        sum_n=sum_n+nat
-print sum_n
+def multipleSum(n):
+    nSum=0
+    for a in range(n-1,0,-1):
+        if (a%3)==0 or (a%5) ==0:
+            nSum+=a
+    print nSum
+multipleSum(1000)
