@@ -1,15 +1,15 @@
-num = input ("ingrese numero: ")
-num = int(num)
-n=0
-primo=range(2,10000)
-lista= []
-def main():
-  global n,num,lista
-  while num != 1:
-    for prim in primo:
-        if (num%prim)==0:
-            elprimo=prim
-            print elprimo
-            num=num/prim
+__author__= "enzo"
+def prime_number():
+  n=600851475143
+  while n != 1:
+    for primNum in range (2,10000):
+        if (n%primNum)==0:
+            primMax=primNum
+            n=n/primNum
             break
-main()
+  print primMax
+
+prime_number()
+
+
+#change the variables names
