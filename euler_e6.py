@@ -1,5 +1,4 @@
 __author__ = 'enzo'
-import math
 def Diff ():
     SumAll=0
     SumSqrt_Max=0

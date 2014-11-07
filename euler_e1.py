@@ -1,3 +1,4 @@
+__author__ = 'enzo'
 def multipleSum(n):
     nSum=0
     for a in range(n-1,0,-1):
